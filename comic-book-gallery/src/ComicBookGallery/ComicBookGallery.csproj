@@ -236,6 +236,7 @@
     </Compile>
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\ComicBook.cs" />
+    <Compile Include="Models\Series.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
