@@ -23,5 +23,17 @@
 
             return View(series);
         }
+
+        public ActionResult Detail(int? id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+
+            var seriesDetail = _seriesRepository.GetSeriesDetail(id.Value);
+
+            return View(seriesDetail);
+        }
     }
 }
