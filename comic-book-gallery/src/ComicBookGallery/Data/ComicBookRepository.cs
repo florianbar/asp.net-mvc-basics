@@ -1,11 +1,7 @@
-﻿using ComicBookGallery.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace ComicBookGallery.Data
+﻿namespace ComicBookGallery.Data
 {
+    using ComicBookGallery.Models;
+
     public class ComicBookRepository
     {
         public ComicBook[] GetComicBooks()

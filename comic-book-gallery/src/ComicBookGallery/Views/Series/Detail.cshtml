@@ -1,0 +1,19 @@
+﻿@model ComicBookGallery.Models.Series
+
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.ShowBackBar = true;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="well">
+    <h5>Description</h5>
+    <div>
+        @Html.Raw(Model.DescriptionHtml)
+    </div>
+</div>
+
+<h4>Comic Books Available in This Series</h4>
+
+@Html.Partial("_ComicBooksList", Model.Issues)
